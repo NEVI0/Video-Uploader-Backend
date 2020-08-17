@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F9F9F9;
+}
+
+.main {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 200px;
+}
+
+.header {
+	text-align: center;
+}
+
+.header .title {
+	font-family: 'Sriracha', cursive;
+	font-size: 27px
+}
+.header .title.success {
+	color: #0CDC02
+}
+.header .title.cancel {
+	color: #F32929;
+}
+
+.content {
+	text-align: justify;
+	margin: 20px 0;
+}

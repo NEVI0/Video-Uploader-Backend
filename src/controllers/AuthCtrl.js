@@ -43,8 +43,8 @@ const signup = async (request, response) => {
 			        "payment_method": "paypal"
 			    },
 			    "redirect_urls": {
-			        "return_url": `http://localhost:3000/api/paypalSuccess/${email}`,
-			        "cancel_url": "http://localhost:3000/api/paypalCancel"
+			        "return_url": `http://${process.env.SERVER_IP || 'localhost'}:3000/api/paypalSuccess/${email}`,
+			        "cancel_url": `http://${process.env.SERVER_IP || 'localhost'}:3000/api/paypalCancel`
 			    },
 			    "transactions": [{
 			        "item_list": {
